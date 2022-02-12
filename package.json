@@ -1,10 +1,10 @@
 {
     "name": "user_management_system",
     "version": "1.0.0",
-    "script": {
-        "client": "cd client && npm start",
+    "scripts": {
+        "client": "cd client && yarn start",
         "server": "nodemon server.js",
-        "dev": "concurrently --kill-others-on-fail \"npm server\" \"npm client\""
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
     },
     "dependencies": {
         "@material-ui/core": "^4.12.3",
@@ -12,7 +12,8 @@
         "body-parser": "^1.19.1",
         "express": "^4.17.2",
         "multer": "^1.4.4",
-        "mysql": "^2.18.1"
+        "mysql": "^2.18.1",
+        "yarn": "^1.22.17"
     },
     "devDependencies": {
         "concurrently": "^4.0.1"
