@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 const data=fs.readFileSync('./database.json');
 const conf=JSON.parse(data);
-const mysql=require('mysql');
+const mysql=require('mysql2');
 
 const connection=mysql.createConnection({
     host:conf.host,
